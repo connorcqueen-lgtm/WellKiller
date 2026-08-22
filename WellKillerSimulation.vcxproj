@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Well.cpp" />
     <ClCompile Include="WellKillerSimulation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Well.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

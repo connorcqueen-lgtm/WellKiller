@@ -8,6 +8,8 @@
 #include <stdexcept>
 #include <limits>
 
+#include "Well.h"
+
 using namespace std;
 
 
@@ -107,75 +109,6 @@ public:
             << wellID << "." << endl;
     }
 };
-
-
-class Well
-{
-private:
-
-    // Private data cannot be changed directly from main().
-    int wellID;
-
-    string wellName;
-
-    bool running;
-
-public:
-
-    // Constructor
-    Well(int id, string name)
-    {
-        wellID = id;
-        wellName = name;
-
-        // Wells begin the program running.
-        running = true;
-    }
-
-    // Return the well's ID number.
-    int getID() const
-    {
-        return wellID;
-    }
-
-    // Return the well's name.
-    string getName() const
-    {
-        return wellName;
-    }
-
-    // Return whether the well is running.
-    bool isRunning() const
-    {
-        return running;
-    }
-
-    // Shut the well down.
-    void shutdown()
-    {
-        running = false;
-    }
-
-    // Display this well's information.
-    void displayStatus() const
-    {
-        cout << "Well " << wellID
-            << " - " << wellName
-            << " - ";
-
-        if (running)
-        {
-            cout << "RUNNING";
-        }
-        else
-        {
-            cout << "STOPPED";
-        }
-
-        cout << endl;
-    }
-};
-
 
 
 class WellController

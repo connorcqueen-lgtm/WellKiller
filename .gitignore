@@ -1,0 +1,21 @@
+# Visual Studio temporary files
+.vs/
+
+# Build output
+Debug/
+Release/
+x64/
+x86/
+
+# User-specific Visual Studio files
+*.user
+
+# Compiled C++ files
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.ipch
+
+# Well Killer runtime log
+WellKillerLog.txt
